@@ -39,7 +39,7 @@
 &kp TAB          &mt EXCLAMATION N1  &mt AT_SIGN N2               &mt POUND N3                   &mt DOLLAR N4         &mt PERCENT N5    &mt CARET N6  &mt AMPERSAND N7  &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BSPC
 &mt TILDE GRAVE  &mt PIPE BACKSLASH  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &mt UNDERSCORE MINUS  &mt PLUS EQUAL    &kp LEFT      &kp DOWN          &kp UP           &kp RIGHT                &kp PAGE_UP               &kp PRINTSCREEN
 &bt BT_CLR       &bt BT_SEL 0        &bt BT_SEL 1                 &bt BT_SEL 2                   &bt BT_SEL 3          &bt BT_SEL 4      &none         &none             &none            &none                    &kp PG_DN                 &kp DELETE
-                                                                  &trans                         &trans                &kp SPACE         &kp RET       &trans            &kp RALT
+                                                                  &trans                         &trans                &kp SPACE         &kp RET       &kp LEFT_SHIFT    &kp RALT
             >;
         };
 
