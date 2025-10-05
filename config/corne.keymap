@@ -106,10 +106,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1     &kp F2  &kp F3  &kp F4    &kp F5    &kp F6       &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&kp LCTRL  &trans  &trans  &trans    &mkp MB1  &mkp MB2     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans   &trans
-&kp LSHFT  &trans  &trans  &trans    &trans    &trans       &trans          &trans          &trans        &trans           &trans   &trans
-                           &kp LGUI  &trans    &kp SPACE    &kp RET         &trans          &kp RALT
+&none  &kp LESS_THAN  &kp GREATER_THAN  &kp F4         &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none         &none
+&none  &hml LGUI N1   &hml LALT N2      &hml LCTRL N3  &hml LSHFT N4     &kp N5               &kp N6          &hmr RSHIFT N7   &hmr RCTRL N8     &hmr N9 RALT       &hmr N0 RGUI  &none
+&none  &kp TILDE      &kp SEMICOLON     &kp COLON      &kp PLUS          &kp UNDER            &kp MINUS       &kp EQUAL        &kp BACKSLASH     &kp PIPE           &kp GRAVE     &none
+                                        &kp TAB        &kp ESC           &trans               &kp RET         &kp BACKSPACE    &kp DELETE
             >;
         };
 
