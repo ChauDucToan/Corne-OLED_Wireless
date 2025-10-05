@@ -107,10 +107,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none         &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none         &none
-&none  &hml LGUI N1  &hml LALT N2   &hml LCTRL N3     &hml LSHFT N4     &kp N5               &kp N6          &hmr RSHIFT N7   &hmr RCTRL N8     &hmr N9 RALT       &hmr N0 RGUI  &none
-&none  &kp TILDE     &kp SEMICOLON  &kp COLON         &kp PLUS          &kp UNDER            &kp MINUS       &kp EQUAL        &kp BACKSLASH     &kp PIPE           &kp GRAVE     &none
-                                    &kp TAB           &kp ESC           &trans               &kp RET         &kp BACKSPACE    &kp DELETE
+&none     &none      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp EQUAL      &kp SINGLE_QUOTE  &none      &none      &none
+&kp LGUI  &kp N1     &kp N2         &kp N3            &kp N4            &kp N5               &kp N6     &kp N7         &kp N8            &kp N9     &kp N0     &kp RGUI
+&none     &kp LCTRL  &kp LSHFT      &kp GRAVE         &kp COMMA         &kp DOT              &kp SEMI   &kp FSLH       &kp BSLH          &kp RSHFT  &kp RCTRL  &none
+                                    &kp TAB           &kp ESC           &trans               &kp RET    &kp BACKSPACE  &kp DELETE
             >;
         };
 
