@@ -193,7 +193,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPS  &kp Q            &kp W            &kp E         &kp R              &kp T             &kp Y         &kp U               &kp I         &kp O        &kp P           &kp SCROLLLOCK
+&kp CAPS  &kp Q            &kp W            &kp E         &kp R              &kp T             &kp Y         &kp U               &kp I         &kp O        &kp P           &tog 5
 &kp HOME  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G             &kp H         &hmr RIGHT_SHIFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp PG_UP
 &kp END   &kp Z            &kp X            &kp C         &kp V              &kp B             &kp N         &kp M               &kp COMMA     &kp DOT      &kp FSLH        &kp PG_DN
                                             &kp TAB       &my_lt 3 ESC       &my_lt 2 SPACE    &my_lt 1 RET  &my_lt 4 BACKSPACE  &kp DELETE
@@ -208,10 +208,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB   &none           &kp K_CUT       &kp K_PASTE   &kp K_COPY       &none                         &kp INSERT  &kp K_UNDO     &kp K_REDO  &none      &none  &kp SCROLLLOCK
-&kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &m_tap_hold SCRL_UP MB1       &kp LEFT    &kp DOWN       &kp UP      &kp RIGHT  &none  &kp PG_UP
-&kp END   &none           &none           &none         &none            &m_tap_hold SCRL_DOWN RCLK    &none       &none          &none       &none      &none  &kp PG_DN
-                                          &kp TAB       &kp ESCAPE       &kp SPACE                     &trans      &kp BACKSPACE  &kp DELETE
+&trans  &none           &kp K_CUT       &kp K_PASTE   &kp K_COPY       &none                         &kp INSERT  &kp K_UNDO     &kp K_REDO  &none      &none  &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &m_tap_hold SCRL_UP MB1       &kp LEFT    &kp DOWN       &kp UP      &kp RIGHT  &none  &trans
+&trans  &none           &none           &none         &none            &m_tap_hold SCRL_DOWN RCLK    &none       &none          &none       &none      &none  &trans
+                                        &kp TAB       &kp ESCAPE       &kp SPACE                     &trans      &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -223,7 +223,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none     &none      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp EQUAL      &kp SINGLE_QUOTE  &none      &none      &none
+&none     &none      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp EQUAL      &kp SINGLE_QUOTE  &none      &none      &trans
 &kp LGUI  &kp N1     &kp N2         &kp N3            &kp N4            &kp N5               &kp N6     &kp N7         &kp N8            &kp N9     &kp N0     &kp RGUI
 &none     &kp LCTRL  &kp LSHFT      &kp GRAVE         &kp COMMA         &kp DOT              &kp SEMI   &kp FSLH       &kp BSLH          &kp RSHFT  &kp RCTRL  &none
                                     &kp TAB           &kp ESC           &trans               &kp RET    &kp BACKSPACE  &kp DELETE
@@ -233,7 +233,7 @@
         function_layer {
             bindings = <
 &kp F13  &kp F14    &kp F15    &kp F16  &kp F17  &kp F18      &kp F19    &kp F20        &kp F21     &kp F22    &kp F23    &kp F24
-&kp F1   &kp F2     &kp F3     &kp F4   &kp F5   &kp F6       &kp F7     &kp F8         &kp F9      &kp F10    &kp F11    &kp F12
+&kp F1   &kp F1     &kp F2     &kp F3   &kp F4   &kp F5       &kp F6     &kp F7         &kp F8      &kp F9     &kp F10    &kp F12
 &none    &kp LCTRL  &kp LSHFT  &none    &none    &none        &none      &none          &none       &kp RSHFT  &kp RCTRL  &none
                                &kp TAB  &trans   &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
@@ -241,10 +241,19 @@
 
         system_layer {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &trans   &trans  &trans   &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans  &trans   &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans   &trans  &trans   &trans  &trans  &trans
+&none       &none         &none         &none         &none         &none           &none    &none   &none    &none  &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none    &none   &none    &none  &none  &none
+&none       &none         &none         &none         &none         &none           &none    &none   &none    &none  &none  &none
                                         &kp TAB       &kp ESC       &kp SPACE       &kp RET  &trans  &kp DEL
+            >;
+        };
+
+        GAME_LAYER {
+            bindings = <
+&kp CAPS   &kp Q  &kp W  &kp E    &kp R    &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &trans
+&kp LSHFT  &kp A  &kp S  &kp D    &kp F    &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &trans
+&kp LCTRL  &kp Z  &kp X  &kp C    &kp V    &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &kp TAB  &kp ESC  &kp SPACE    &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
     };
