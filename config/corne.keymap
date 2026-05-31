@@ -181,10 +181,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none     &none      &kp GRAVE  &kp MINUS             &kp EQUAL              &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SEMICOLON  &none      &none      &trans
-&kp LGUI  &kp N1     &kp N2     &kp N3                &kp N4                 &kp N5              &kp N6             &kp N7                &kp N8         &kp N9     &kp N0     &kp RGUI
-&none     &kp LCTRL  &kp LSHFT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA           &kp PERIOD         &kp FSLH              &kp SQT        &kp RSHFT  &kp RCTRL  &none
-                                &kp TAB               &kp ESC                &trans              &kp RET            &kp BACKSPACE         &kp DELETE
+&none     &none      &kp GRAVE  &kp MINUS             &kp EQUAL              &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SEMICOLON  &none      &none      &trans
+&kp LGUI  &kp N1     &kp N2     &kp N3                &kp N4                 &kp N5              &kp N6             &kp N7         &kp N8         &kp N9     &kp N0     &kp RGUI
+&none     &kp LCTRL  &kp LSHFT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA           &kp PERIOD         &kp FSLH       &kp SQT        &kp RSHFT  &kp RCTRL  &none
+                                &kp TAB               &kp ESC                &trans              &kp RET            &kp BACKSPACE  &kp DELETE
             >;
         };
 
